@@ -122,143 +122,16 @@ body{
 }
 
 
-/*SECCION OPCIONES*/
+/*SECCION SELECCION*/
 
-.seleccion {
-    background-color: $colorMenu2;
-    height: 610px;
-    margin-top: 20px;
-    display: flex;
+@import "_seleccion";
 
-    .seleccionDe {
-        height: auto;
-        display: flex;
-        align-items: center;
-
-        .seleccionConjuntos {
-            width: 100%;
-            height: 95%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .conjuntos {
-                width: 90%;
-                height: 100%;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/conjuntos.jpeg);
-                background-size: cover;
-            }
-
-        }
-
-    }
-
-    .conjuntos:hover,
-    .tops:hover,
-    .calzas:hover,
-    .shorts:hover {
-        transform: scale(1.06);
-        transition: all 0.7s;
-    }
-
-    .seleccionIz {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-
-        .seleccionTops {
-            display: flex;
-            align-items: center;
-
-            .tops {
-                width: 100%;
-                height: 90%;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/tops.jpeg);
-                background-size: cover;
-                background-position-y: center;
-                background-position-x: center;
-
-            }
-        }
-
-        .seleccionCalzas {
-            display: flex;
-            align-items: center;
-
-            .calzas {
-                width: 100%;
-                height: 90%;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/producto4.jpeg);
-                background-size: cover;
-
-            }
-        }
-
-        .seleccionShorts {
-            display: flex;
-            align-items: center;
-
-            .shorts {
-                width: 100%;
-                height: 90%;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/nuevoproducto2.jpeg);
-                background-size: cover;
-                background-position-y: center;
-                background-position-x: center;
-
-            }
-        }
-
-
-    }
-
-    .tituloSeleccion {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-
-        a {
-            font-family: $letra;
-            font-size: 40px;
-            text-decoration: none;
-            color: $color1;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-    }
-
-    .shopSeleccion {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        a {
-            font-family: $letra;
-            font-size: 16px;
-            text-decoration: none;
-            color: $color1;
-            border: 1px solid $color1;
-            padding: 2px;
-            margin-top: 6px;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-    }
-
-}
+/*FIN SELECCION*/
 
 .redesSociales {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 
     a {
@@ -267,6 +140,8 @@ body{
 
         .instagramHome {
             padding-left: 20px;
+            height: 52px;
+            margin-bottom: 0%;
 
             img {
                 width: 25px;
@@ -290,7 +165,7 @@ body{
     }
 
     .instagramSeguinos {
-        font-size: 20px;
+        font-size: 23px;
         font-family: 'Lora', serif;
     }
 
@@ -562,3 +437,4 @@ footer {
 @import "_productos";
 /* INICIO SECCION CONTACTO*/
 @import "_contacto";
+
