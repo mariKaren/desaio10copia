@@ -91,32 +91,36 @@ header{
     color: transparent;
 }
 /*FIN HEADER*/
+
 body{
     padding-top: 110px;
 }
+
 /*INICIO BODY HOME*/
+/*PORTADA*/
+.carousel-indicators {
+    background-color: $colorNav;
+    height: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+#pBarraCarousel {
+    position: relative;
+}
 .carousel-inner {
     width: 100%;
     height: auto;
-
     .carousel-item {
-        height: 100%;
+        height: 465px;
 
         img {
-            width: 95%;
+            width: 93%;
             height: auto;
         }
     }
 
 }
 
-.carousel-indicators {
-    background-color: $colorNav;
-}
-
-#pBarraCarousel {
-    position: relative;
-}
 
 /*SECCION OPCIONES*/
 

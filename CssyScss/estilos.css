@@ -81,24 +81,28 @@ body {
 }
 
 /*INICIO BODY HOME*/
+/*PORTADA*/
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#pBarraCarousel {
+  position: relative;
+}
+
 .carousel-inner {
   width: 100%;
   height: auto;
 }
 .carousel-inner .carousel-item {
-  height: 100%;
+  height: 465px;
 }
 .carousel-inner .carousel-item img {
-  width: 95%;
+  width: 93%;
   height: auto;
-}
-
-.carousel-indicators {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-#pBarraCarousel {
-  position: relative;
 }
 
 /*SECCION OPCIONES*/
