@@ -16,7 +16,8 @@ $letra: 'Lora',
 serif;
 $letra2:'Merriweather',
 serif;
-$letra3:'Cormorant', serif;
+$letra3:'Cormorant',
+serif;
 
 * {
     margin: 0;
@@ -24,75 +25,89 @@ $letra3:'Cormorant', serif;
 }
 
 /*INICIO HEADER*/
-header{
+header {
     height: 110px;
     width: 100%;
-    top:0;
+    top: 0;
     position: fixed;
     margin-bottom: 0px;
     z-index: 1000;
-    .envios{
+
+    .envios {
         width: 100%;
         height: 30px;
         background-color: #E7B7C1;
         margin-bottom: -6px;
-        p{
+
+        p {
             margin-bottom: 0%;
             display: inline-block;
             font-family: $letra3;
             font-size: 20px;
             font-weight: bold;
-          
+
         }
-        img{
+
+        img {
             height: auto;
             width: 20px;
             padding-bottom: 2px;
         }
     }
+
     .bg-color {
-        background-color:$color1;
+        background-color: $color1;
     }
 }
-.navbar{
+
+.navbar {
     width: 100%;
     height: 80px;
     padding: 0%;
-    border-bottom: 5px $colorMenu solid; 
+    border-bottom: 5px $colorMenu solid;
+
     .navbar-brand img {
         height: 70px;
         padding-left: 67px;
     }
+
     .nav-item {
         width: 80px;
+
         .nav-link {
             width: 80%;
-            img{
+
+            img {
                 width: 90%;
             }
         }
+
         .dropdown-menu {
             min-width: 70px;
             margin: 0px;
             padding: 0px;
             left: -50px;
+
             .dropdown-item {
                 width: 100%;
                 text-align: center;
                 border: 1px solid $colorMenu;
             }
+
             .dropdown-item:hover {
                 background-color: $colorMenu;
             }
         }
     }
 }
+
 .dropdown-toggle::after {
     color: transparent;
 }
+
 /*FIN HEADER*/
 
-body{
+body {
     padding-top: 110px;
 }
 
@@ -104,12 +119,15 @@ body{
     align-items: center;
     margin-bottom: 15px;
 }
+
 #pBarraCarousel {
     position: relative;
 }
+
 .carousel-inner {
     width: 100%;
     height: auto;
+
     .carousel-item {
         height: 465px;
 
@@ -173,10 +191,8 @@ body{
 
 /* FOOTER */
 footer {
-    grid-area: footer;
     width: 100%;
     height: 200px;
-    background-color: $colorNav;
     display: grid;
     grid-template-areas:
         "NavFooter NavFooter"
@@ -185,22 +201,27 @@ footer {
 
     .navFooter {
         width: 100%;
-        height: 1.5%;
         text-align: center;
         grid-area: NavFooter;
-
-        a {
-            text-decoration: none;
-            font-size: 16px;
-            color: $cletra1;
+        ul{
+            
+            li {
+                display: inline-block;
+                width: 10%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $colorMenu2;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    font-family: $letra;
+                    color: $cletra1;
+                }
+            }
         }
-
-        li {
-            display: inline-block;
-            width: 10%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+        
     }
 
     .datosFooter {
@@ -233,10 +254,12 @@ footer {
 
 
     .copyRight {
-        margin-bottom: 2px;
+        background-color: $cletra3;
         margin-top: 10px;
         font-size: 16px;
-        margin-left: 8px;
+        letter-spacing: 1px;
+        font-family: $letra;
+        text-align: center;
         grid-area: copyRight;
     }
 }
@@ -247,30 +270,37 @@ footer {
     .navbar-brand img {
         height: 70px;
     }
-    .nav-item{
+
+    .nav-item {
         width: 70px;
     }
-    .nav-link{
-        width:95%;
-        img{
+
+    .nav-link {
+        width: 95%;
+
+        img {
             width: 100%;
         }
-        
+
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         left: -25px;
     }
-    .dropdown-item{
+
+    .dropdown-item {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     footer {
         height: auto;
 
         .navFooter ul li {
             width: 25%;
         }
-        .datosFooter{
+
+        .datosFooter {
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -293,6 +323,7 @@ footer {
 
     }
 }
+
 @media only screen and (min-width:416px) and (max-width: 576px) {
     .seleccion {
         flex-wrap: wrap;
@@ -437,4 +468,3 @@ footer {
 @import "_productos";
 /* INICIO SECCION CONTACTO*/
 @import "_contacto";
-
