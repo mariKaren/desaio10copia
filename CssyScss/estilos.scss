@@ -92,6 +92,7 @@ header {
                 width: 100%;
                 text-align: center;
                 border: 1px solid $colorMenu;
+                font-family: $letra;
             }
 
             .dropdown-item:hover {
@@ -117,7 +118,7 @@ body {
     background-color: $colorNav;
     height: 15px;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #pBarraCarousel {
@@ -129,7 +130,7 @@ body {
     height: auto;
 
     .carousel-item {
-        height: 465px;
+        height: 480px;
 
         img {
             width: 93%;

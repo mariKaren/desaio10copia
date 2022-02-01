@@ -1,7 +1,7 @@
 .seleccion{
     height: 520px;
     background-color: $color1;
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
     grid-template-areas:
     "conjuntos tops tops"
@@ -76,7 +76,7 @@
             height: 90%;
             background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../multimedia/tops.jpeg);
             background-size: cover;
-            background-position-y:-400px ;
+            background-position-y:center;
             background-position-x:center;
             box-shadow: 5px 5px 5px;
         }
