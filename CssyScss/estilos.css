@@ -70,6 +70,7 @@ header .bg-color {
 }
 .navbar .nav-item .dropdown-menu .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.15);
+  color: white;
 }
 
 .dropdown-toggle::after {
