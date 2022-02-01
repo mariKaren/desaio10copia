@@ -272,11 +272,11 @@ footer {
         height: 70px;
     }
 
-    .nav-item {
-        width: 70px;
+    .navbar .nav-item {
+        width: 60px;
     }
 
-    .nav-link {
+    .navbar .nav-item .nav-link {
         width: 95%;
 
         img {
@@ -310,56 +310,124 @@ footer {
 }
 
 @media only screen and (min-width:500px) and (max-width: 800px) {
-
-    .navFooter ul li {
-        width: 15%;
+    footer{
+        .navFooter ul li {
+        width: 20%;
+        } 
+    }
+   
+}
+/*media portada*/
+@media only screen and (min-width:320px) and (max-width: 1150px) {
+    
+    .carousel-inner{
+        .carousel-item{
+            height: auto;
+        }
+        
     }
 }
 
 /* media de HOME */
 
 @media only screen and (min-width:576px) and (max-width: 768px) {
-    .seleccion {
-        flex-wrap: wrap;
+    .seleccion{
+        grid-template-areas:
+        "conjuntos tops"
+        "seleccionTres seleccionTres";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+        .seleccionConjuntos{
+            padding-bottom: 8px;
+            .conjuntos{
+                width: 90%;
+                height: 90%;
 
+            }
+        }
+        .seleccionTops{
+            padding-left: 0%;
+            justify-content: center;
+            .tops{
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+    .redesSociales {
+        a .instagramHome {
+            height: auto;
+            img {
+                width: 20px;
+                height: auto;
+                padding-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 35px;
+
+            }
+        }
     }
 }
 
 @media only screen and (min-width:416px) and (max-width: 576px) {
-    .seleccion {
-        flex-wrap: wrap;
-        height: auto;
-
-        .seleccionDe .seleccionConjuntos {
-            height: 300px;
-            padding-left: 0px;
-            padding-right: 0px;
+    .seleccion{
+        grid-template-areas:
+        "conjuntos tops"
+        "seleccionTres seleccionTres"
+        "seleccionTres seleccionTres";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(3,1fr);
+        .tituloSeleccion a{
+            font-size: 30px;
         }
+        .seleccionConjuntos{
+            padding-bottom: 8px;
+            .conjuntos{
+                width: 90%;
+                height: 90%;
 
-        .seleccionCalzas,
-        .seleccionShorts,
-        .seleccionTops {
-            height: 300px;
-            padding-left: 18px;
-            padding-right: 18px;
+            }
         }
-
+        .seleccionTops{
+            padding-left: 0%;
+            justify-content: center;
+            .tops{
+                width: 90%;
+                height: 90%;
+            }
+        }
+        .seleccionTres{
+            flex-wrap: wrap;
+            justify-content: center;
+            .seleccionCalzas, .seleccionRemeras, .seleccionShorts{
+                width: 50%;
+                justify-content: center;
+            }
+            .seleccionCalzas, .seleccionShorts{
+                padding-right: 10px;
+            }
+            
+        }
     }
 
+
+
     .redesSociales {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
         a .instagramHome {
-
+            height: auto;
             img {
-                width: 15px;
+                width: 20px;
                 height: auto;
-                padding-bottom: 5px;
+                padding-bottom: 10px;
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 30px;
 
             }
         }
@@ -378,32 +446,73 @@ footer {
 
 
 @media only screen and (min-width:320px) and (max-width: 416px) {
-    .seleccion {
-        flex-wrap: wrap;
+
+    .seleccion{
         height: auto;
-
-        .seleccionDe .seleccionConjuntos {
-            height: 300px;
-            padding-left: 0px;
-            padding-right: 0px;
+        margin-top: 20px;
+        grid-template-areas:
+        "conjuntos"
+        "tops"
+        "seleccionTres" 
+        "seleccionTres"
+        "seleccionTres";
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(5,150px);
+        .tituloSeleccion a{
+            font-size: 25px;
         }
-
-        .seleccionCalzas,
-        .seleccionShorts,
-        .seleccionTops {
-            height: 300px;
-            padding-left: 16px;
-            padding-right: 16px;
+        .seleccionConjuntos{
+            padding-bottom: 15px;
+            .conjuntos{
+                width: 70%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
         }
-
+        .seleccionTops{
+            padding-left: 0%;
+            padding-bottom: 15px;
+            justify-content: center;
+            .tops{
+                width: 70%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+        }
+        .seleccionTres{
+            flex-wrap: wrap;
+            justify-content: center;
+            .seleccionCalzas, .seleccionRemeras, .seleccionShorts{
+                width: 100%;
+                justify-content: center;
+                padding-right: 5px;
+            }
+            .seleccionCalzas .calzas{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+               
+            }
+            .seleccionRemeras .remeras{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+            .seleccionShorts .shorts{
+                width: 71.3%;
+                height: 100%;
+                box-shadow: 3px 3px 3px;
+            }
+            
+            
+        }
     }
-
     .redesSociales {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
         a .instagramHome {
-
+            height: auto;
             img {
                 width: 15px;
                 height: auto;
@@ -411,7 +520,7 @@ footer {
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 25px;
 
             }
         }

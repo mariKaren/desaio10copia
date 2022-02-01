@@ -336,14 +336,14 @@ footer .copyRight {
     height: 70px;
   }
 
-  .nav-item {
-    width: 70px;
+  .navbar .nav-item {
+    width: 60px;
   }
 
-  .nav-link {
+  .navbar .nav-item .nav-link {
     width: 95%;
   }
-  .nav-link img {
+  .navbar .nav-item .nav-link img {
     width: 100%;
   }
 
@@ -368,45 +368,101 @@ footer .copyRight {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-  .navFooter ul li {
-    width: 15%;
+  footer .navFooter ul li {
+    width: 20%;
+  }
+}
+/*media portada*/
+@media only screen and (min-width: 320px) and (max-width: 1150px) {
+  .carousel-inner .carousel-item {
+    height: auto;
   }
 }
 /* media de HOME */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .seleccion {
-    flex-wrap: wrap;
+    grid-template-areas: "conjuntos tops" "seleccionTres seleccionTres";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 8px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 90%;
+    height: 90%;
+  }
+
+  .redesSociales a .instagramHome {
+    height: auto;
+  }
+  .redesSociales a .instagramHome img {
+    width: 20px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 35px;
   }
 }
 @media only screen and (min-width: 416px) and (max-width: 576px) {
   .seleccion {
+    grid-template-areas: "conjuntos tops" "seleccionTres seleccionTres" "seleccionTres seleccionTres";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .seleccion .tituloSeleccion a {
+    font-size: 30px;
+  }
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 8px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 90%;
+    height: 90%;
+  }
+  .seleccion .seleccionTres {
     flex-wrap: wrap;
-    height: auto;
+    justify-content: center;
   }
-  .seleccion .seleccionDe .seleccionConjuntos {
-    height: 300px;
-    padding-left: 0px;
-    padding-right: 0px;
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionRemeras, .seleccion .seleccionTres .seleccionShorts {
+    width: 50%;
+    justify-content: center;
   }
-  .seleccion .seleccionCalzas,
-.seleccion .seleccionShorts,
-.seleccion .seleccionTops {
-    height: 300px;
-    padding-left: 18px;
-    padding-right: 18px;
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionShorts {
+    padding-right: 10px;
   }
 
   .redesSociales {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .redesSociales a .instagramHome {
+    height: auto;
   }
   .redesSociales a .instagramHome img {
-    width: 15px;
+    width: 20px;
     height: auto;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   .redesSociales a .instagramHome h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .redesSociales .instagramHome:hover {
     transform: scale(1.04);
@@ -417,25 +473,64 @@ footer .copyRight {
 }
 @media only screen and (min-width: 320px) and (max-width: 416px) {
   .seleccion {
-    flex-wrap: wrap;
     height: auto;
+    margin-top: 20px;
+    grid-template-areas: "conjuntos" "tops" "seleccionTres" "seleccionTres" "seleccionTres";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 150px);
   }
-  .seleccion .seleccionDe .seleccionConjuntos {
-    height: 300px;
-    padding-left: 0px;
-    padding-right: 0px;
+  .seleccion .tituloSeleccion a {
+    font-size: 25px;
   }
-  .seleccion .seleccionCalzas,
-.seleccion .seleccionShorts,
-.seleccion .seleccionTops {
-    height: 300px;
-    padding-left: 16px;
-    padding-right: 16px;
+  .seleccion .seleccionConjuntos {
+    padding-bottom: 15px;
+  }
+  .seleccion .seleccionConjuntos .conjuntos {
+    width: 70%;
+    height: 100%;
+    box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTops {
+    padding-left: 0%;
+    padding-bottom: 15px;
+    justify-content: center;
+  }
+  .seleccion .seleccionTops .tops {
+    width: 70%;
+    height: 100%;
+    box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .seleccion .seleccionTres .seleccionCalzas, .seleccion .seleccionTres .seleccionRemeras, .seleccion .seleccionTres .seleccionShorts {
+    width: 100%;
+    justify-content: center;
+    padding-right: 5px;
+  }
+  .seleccion .seleccionTres .seleccionCalzas .calzas {
+    width: 71.3%;
+    height: 100%;
+    box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres .seleccionRemeras .remeras {
+    width: 71.3%;
+    height: 100%;
+    box-shadow: 3px 3px 3px;
+  }
+  .seleccion .seleccionTres .seleccionShorts .shorts {
+    width: 71.3%;
+    height: 100%;
+    box-shadow: 3px 3px 3px;
   }
 
   .redesSociales {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .redesSociales a .instagramHome {
+    height: auto;
   }
   .redesSociales a .instagramHome img {
     width: 15px;
@@ -443,7 +538,7 @@ footer .copyRight {
     padding-bottom: 5px;
   }
   .redesSociales a .instagramHome h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .redesSociales .instagramHome:hover {
     transform: scale(1.04);
